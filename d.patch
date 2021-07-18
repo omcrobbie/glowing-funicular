@@ -1,0 +1,14 @@
+diff --git a/test/f1/index.js b/test/f1/index.js
+index 627018e..0fe0858 100644
+--- a/test/f1/index.js
++++ b/test/f1/index.js
+@@ -1,9 +1,6 @@
+ function fibonacci2(num, memo) {
+   memo = memo || {};
+ 
+-  if (memo[num]) {
+-      return memo[num];
+-  }
+   if (num <= 1) {
+       return 1;
+   }

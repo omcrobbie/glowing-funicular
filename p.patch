@@ -1,0 +1,23 @@
+diff --git a/test/f1/index.js b/test/f1/index.js
+index 627018e..7322a48 100644
+--- a/test/f1/index.js
++++ b/test/f1/index.js
+@@ -1,12 +1,12 @@
+-function fibonacci2(num, memo) {
+-  memo = memo || {};
++function fibonacci2(num, memo1) {
++  memo1 = memo1 || {};
+ 
+-  if (memo[num]) {
+-      return memo[num];
++  if (memo1[num]) {
++      return memo1[num];
+   }
+   if (num <= 1) {
+       return 1;
+   }
+ 
+-  return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
++  return memo1[num] = fibonacci(num - 1, memo1) + fibonacci(num - 2, memo1);
+ }
+\ No newline at end of file
